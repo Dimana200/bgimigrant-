@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BGImigrant.com – Намери Български Услуги По Целия Свят | 18 Държави</title>
+<meta name="description" content="Най-голямата платформа за Български бизнеси и услуги в чужбина. 300+ обяви от Българи в 18 страни. Строителство, почистване, ресторанти, счетоводство и още." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://bgimigrant.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bgimigrant.com/" />
+<meta property="og:title" content="BGImigrant.com – Намери Български Услуги По Целия Свят" />
+<meta property="og:description" content="300+ обяви от Българи в 18 държави. Безплатно публикуване!" />
+<meta property="og:locale" content="bg_BG" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"BGImigrant.com","url":"https://bgimigrant.com","description":"Директория за Български услуги по целия свят","inLanguage":"bg","potentialAction":{"@type":"SearchAction","target":"https://bgimigrant.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-bar" id="cookie-bar" style="display:none">
+  <p>🍪 Използваме бисквитки за да подобрим вашето изживяване. <a href="#">Политика за поверителност</a> | <a href="#">GDPR</a></p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="Cookie.accept()">✓ Приемам</button>
+    <button class="cookie-reject" onclick="Cookie.reject()">Само необходими</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="hdr-inner">
+    <a href="/" class="logo">BG<em>Imigrant</em><sup>.com</sup></a>
+    <div class="hdr-search">
+      <span class="hdr-icon">🔍</span>
+      <input type="text" id="hdr-search" placeholder="Търси услуга, бизнес, град..." />
+    </div>
+    <nav class="hdr-right">
+      <button class="btn-ghost" id="btn-login">Вход</button>
+      <button class="btn-gold" id="btn-add"><span class="btn-full">+ Добави обява</span><span class="btn-short">＋</span></button>
+      <a href="/admin/" id="admin-link" style="display:none" class="btn-ghost">⚙ Admin</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero" aria-label="Търсачка">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag" role="note">🌍 БЕЗПЛАТНА ПЛАТФОРМА ЗА БЪЛГАРИ</div>
+    <h1>Намери <mark>Свой Човек</mark><br>Навсякъде По Света</h1>
+    <p class="hero-sub">Директория с 300+ обяви от Българи предлагащи услуги и бизнеси в 18 държави.</p>
+    <div class="search-mega" role="search">
+      <input type="text" id="search-main" placeholder="🔍 Търси услуга или бизнес..." aria-label="Търсене" />
+      <select id="country-main" aria-label="Избери държава">
+        <option value="">🌍 Всички държави</option>
+        <option value="Германия">🇩🇪 Германия</option>
+        <option value="Великобритания">🇬🇧 Великобритания</option>
+        <option value="Испания">🇪🇸 Испания</option>
+        <option value="Италия">🇮🇹 Италия</option>
+        <option value="Гърция">🇬🇷 Гърция</option>
+        <option value="Австрия">🇦🇹 Австрия</option>
+        <option value="Белгия">🇧🇪 Белгия</option>
+        <option value="Холандия">🇳🇱 Холандия</option>
+        <option value="Франция">🇫🇷 Франция</option>
+        <option value="Швейцария">🇨🇭 Швейцария</option>
+        <option value="Норвегия">🇳🇴 Норвегия</option>
+        <option value="Швеция">🇸🇪 Швеция</option>
+        <option value="Дания">🇩🇰 Дания</option>
+        <option value="Португалия">🇵🇹 Португалия</option>
+        <option value="Турция">🇹🇷 Турция</option>
+        <option value="США">🇺🇸 США</option>
+        <option value="Канада">🇨🇦 Канада</option>
+        <option value="Австралия">🇦🇺 Австралия</option>
+        <option value="ОАЕ">🇦🇪 ОАЕ</option>
+      </select>
+      <button class="search-btn" onclick="Listings.doSearch()">Търси →</button>
+    </div>
+    <div class="hero-stats" aria-label="Статистики">
+      <div class="hero-stat"><span class="num" id="stat-total">300+</span><span class="lbl">Обяви</span></div>
+      <div class="hero-stat"><span class="num">18</span><span class="lbl">Държави</span></div>
+      <div class="hero-stat"><span class="num">14</span><span class="lbl">Категории</span></div>
+      <div class="hero-stat"><span class="num">100%</span><span class="lbl">Безплатно</span></div>
+    </div>
+  </div>
+  <div class="hero-divider" aria-hidden="true"></div>
+</section>
+
+<!-- COUNTRIES -->
+<section class="countries-section" aria-label="Филтър по държава">
+  <div class="container">
+    <p class="section-label">Намери по страна</p>
+    <h2 class="section-title">Bulgarian общности по света</h2>
+    <div class="countries-grid" id="countries-grid">
+      <button class="country-chip active" onclick="Listings.filterCountry('',this)" data-country="" aria-pressed="true">
+        <span class="flag" aria-hidden="true">🌍</span><span>Всички</span>
+      </button>
+      <button class="country-chip" onclick="Listings.filterCountry('Германия',this)" data-country="Германия"><span class="flag">🇩🇪</span><span>Германия</span><span class="chip-count">160+</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Великобритания',this)" data-country="Великобритания"><span class="flag">🇬🇧</span><span>UK</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Испания',this)" data-country="Испания"><span class="flag">🇪🇸</span><span>Испания</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Италия',this)" data-country="Италия"><span class="flag">🇮🇹</span><span>Италия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Гърция',this)" data-country="Гърция"><span class="flag">🇬🇷</span><span>Гърция</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Австрия',this)" data-country="Австрия"><span class="flag">🇦🇹</span><span>Австрия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Белгия',this)" data-country="Белгия"><span class="flag">🇧🇪</span><span>Белгия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Холандия',this)" data-country="Холандия"><span class="flag">🇳🇱</span><span>Холандия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Франция',this)" data-country="Франция"><span class="flag">🇫🇷</span><span>Франция</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Швейцария',this)" data-country="Швейцария"><span class="flag">🇨🇭</span><span>Швейцария</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Норвегия',this)" data-country="Норвегия"><span class="flag">🇳🇴</span><span>Норвегия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Швеция',this)" data-country="Швеция"><span class="flag">🇸🇪</span><span>Швеция</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Дания',this)" data-country="Дания"><span class="flag">🇩🇰</span><span>Дания</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Португалия',this)" data-country="Португалия"><span class="flag">🇵🇹</span><span>Португалия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Турция',this)" data-country="Турция"><span class="flag">🇹🇷</span><span>Турция</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('США',this)" data-country="США"><span class="flag">🇺🇸</span><span>США</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Канада',this)" data-country="Канада"><span class="flag">🇨🇦</span><span>Канада</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('Австралия',this)" data-country="Австралия"><span class="flag">🇦🇺</span><span>Австралия</span></button>
+      <button class="country-chip" onclick="Listings.filterCountry('ОАЕ',this)" data-country="ОАЕ"><span class="flag">🇦🇪</span><span>ОАЕ</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="cats-section" aria-label="Категории">
+  <div class="container">
+    <div class="cats-grid" role="group" aria-label="Филтър по категория">
+      <button class="cat-card active" onclick="Listings.filterCat('all',this)" id="cat-all" aria-pressed="true">
+        <span class="cat-icon" aria-hidden="true">✨</span>
+        <span class="cat-name">Всички</span>
+        <span class="cat-count" id="cnt-all">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Строителство',this)" style="--cat-color:#e67e22">
+        <span class="cat-icon">🔨</span><span class="cat-name">Строителство</span><span class="cat-count" id="cnt-строителство">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Почистване',this)" style="--cat-color:#27ae60">
+        <span class="cat-icon">🧹</span><span class="cat-name">Почистване</span><span class="cat-count" id="cnt-почистване">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Магазини',this)" style="--cat-color:#8e44ad">
+        <span class="cat-icon">🛒</span><span class="cat-name">Магазини</span><span class="cat-count" id="cnt-магазини">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Заведения',this)" style="--cat-color:#e74c3c">
+        <span class="cat-icon">🍽️</span><span class="cat-name">Заведения</span><span class="cat-count" id="cnt-заведения">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Транспорт',this)" style="--cat-color:#2980b9">
+        <span class="cat-icon">🚚</span><span class="cat-name">Транспорт</span><span class="cat-count" id="cnt-транспорт">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Красота',this)" style="--cat-color:#e91e8c">
+        <span class="cat-icon">💇</span><span class="cat-name">Красота</span><span class="cat-count" id="cnt-красота">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Счетоводство',this)" style="--cat-color:#16a085">
+        <span class="cat-icon">📊</span><span class="cat-name">Счетоводство</span><span class="cat-count" id="cnt-счетоводство">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Здраве',this)" style="--cat-color:#1abc9c">
+        <span class="cat-icon">🏥</span><span class="cat-name">Здраве</span><span class="cat-count" id="cnt-здраве">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Уроци',this)" style="--cat-color:#f39c12">
+        <span class="cat-icon">📚</span><span class="cat-name">Уроци</span><span class="cat-count" id="cnt-уроци">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Авто',this)" style="--cat-color:#546e7a">
+        <span class="cat-icon">🚗</span><span class="cat-name">Авто</span><span class="cat-count" id="cnt-авто">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('IT/Дизайн',this)" style="--cat-color:#34495e">
+        <span class="cat-icon">💻</span><span class="cat-name">IT / Дизайн</span><span class="cat-count" id="cnt-it/дизайн">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Работа',this)" style="--cat-color:#0077b6">
+        <span class="cat-icon">💼</span><span class="cat-name">Работа</span><span class="cat-count" id="cnt-работа">обяви</span>
+      </button>
+      <button class="cat-card" onclick="Listings.filterCat('Други',this)" style="--cat-color:#7f8c8d">
+        <span class="cat-icon">📌</span><span class="cat-name">Други</span><span class="cat-count" id="cnt-други">обяви</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORED BANNERS -->
+<div class="container"><div id="sponsored-wrap"></div></div>
+
+<!-- LISTINGS -->
+<main class="listings-section">
+  <div class="container">
+    <div class="listings-header">
+      <h2 class="listings-title" id="listings-h2">Всички обяви</h2>
+      <span class="listings-count" id="listings-count"></span>
+    </div>
+    <div class="seo-block" itemscope itemtype="https://schema.org/WebPageElement">
+      <h1 class="seo-h1" id="seo-h1" itemprop="headline">Намери <span>Български Услуги</span> По Целия Свят</h1>
+      <p class="seo-desc" id="seo-desc" itemprop="description">Най-голямата платформа за Български бизнеси и услуги в чужбина. Намери Българи в Германия, UK, Испания, USA, Австралия и още 13 страни.</p>
+      <div class="seo-tags" id="seo-tags">
+        <span class="seo-tag">Услуги на Български</span>
+        <span class="seo-tag">18 държави</span>
+        <span class="seo-tag">300+ обяви</span>
+      </div>
+    </div>
+    <div id="listings-wrap">
+      <div class="state-box"><div class="loader-ring"></div><p>Зареждане на обявите...</p></div>
+    </div>
+  </div>
+</main>
+
+<!-- PRICING -->
+<section class="pricing-section" aria-label="Ценови планове">
+  <div class="container" style="text-align:center;">
+    <p class="section-label" style="color:#4a6080;">Избери план</p>
+    <h2 class="section-title" style="color:#fff;">Публикувай твоя Бизнес</h2>
+    <p class="section-sub">Достигни хиляди Българи по целия свят. Безплатно стартиране!</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Безплатен</h3>
+        <div class="price-amount">0€</div>
+        <div class="price-per">завинаги</div>
+        <ul class="price-features">
+          <li>✓ 1 активна обява</li>
+          <li>✓ Телефон и имейл</li>
+          <li>✓ Видима в Google</li>
+          <li style="opacity:.4">✗ WhatsApp бутон</li>
+          <li style="opacity:.4">✗ Clickable линкове</li>
+        </ul>
+        <button class="price-cta price-cta-outline" onclick="Auth.openModal()">Регистрирай се →</button>
+      </div>
+      <div class="price-card popular">
+        <div class="price-badge">⭐ НАЙ-ПОПУЛЯРЕН</div>
+        <h3>Стандарт</h3>
+        <div class="price-amount">4.99€</div>
+        <div class="price-per">на месец</div>
+        <ul class="price-features">
+          <li>✓ 5 активни обяви</li>
+          <li>✓ 3 снимки на обява</li>
+          <li>✓ WhatsApp бутон</li>
+          <li>✓ Приоритетно показване</li>
+          <li style="opacity:.5">✗ Clickable линкове</li>
+        </ul>
+        <button class="price-cta price-cta-dark" onclick="window.open(CONFIG.STRIPE_STANDARD,'_blank')">Избери Стандарт →</button>
+      </div>
+      <div class="price-card">
+        <h3>Про</h3>
+        <div class="price-amount">9.99€</div>
+        <div class="price-per">на месец</div>
+        <ul class="price-features">
+          <li>✓ Неограничени обяви</li>
+          <li>✓ Неограничени снимки</li>
+          <li>✓ ⭐ Featured бадж</li>
+          <li>✓ Топ в резултатите</li>
+          <li>✓ Clickable линкове</li>
+        </ul>
+        <button class="price-cta price-cta-outline" onclick="window.open(CONFIG.STRIPE_PRO,'_blank')">Избери Про →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" itemscope itemtype="https://schema.org/Organization">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" itemprop="name">BG<em>Imigrant</em><sup>.com</sup></a>
+        <p itemprop="description">Най-голямата директория за Български услуги по целия свят. Свързваме Българи с Българи — навсякъде.</p>
+        <p style="color:#2a3a54;font-size:12px;margin-top:8px;">© 2025 BGImigrant.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Категории</h4>
+        <ul>
+          <li><a href="#" onclick="Listings.filterCat('Строителство',null)">🔨 Строителство</a></li>
+          <li><a href="#" onclick="Listings.filterCat('Почистване',null)">🧹 Почистване</a></li>
+          <li><a href="#" onclick="Listings.filterCat('Магазини',null)">🛒 Магазини</a></li>
+          <li><a href="#" onclick="Listings.filterCat('Заведения',null)">🍽️ Заведения</a></li>
+          <li><a href="#" onclick="Listings.filterCat('Транспорт',null)">🚚 Транспорт</a></li>
+          <li><a href="#" onclick="Listings.filterCat('Работа',null)">💼 Работа</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Топ Държави</h4>
+        <ul>
+          <li><a href="#" onclick="Listings.filterCountry('Германия',null)">🇩🇪 Германия</a></li>
+          <li><a href="#" onclick="Listings.filterCountry('Великобритания',null)">🇬🇧 UK</a></li>
+          <li><a href="#" onclick="Listings.filterCountry('Испания',null)">🇪🇸 Испания</a></li>
+          <li><a href="#" onclick="Listings.filterCountry('Гърция',null)">🇬🇷 Гърция</a></li>
+          <li><a href="#" onclick="Listings.filterCountry('США',null)">🇺🇸 США</a></li>
+          <li><a href="#" onclick="Listings.filterCountry('Австралия',null)">🇦🇺 Австралия</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Информация</h4>
+        <ul>
+          <li><a href="#">За нас</a></li>
+          <li><a href="#" onclick="AddListing.open()">Добави обява</a></li>
+          <li><a href="#">Ценови планове</a></li>
+          <li><a href="#">Условия за ползване</a></li>
+          <li><a href="#">Поверителност</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SEO FOOTER -->
+<div class="seo-footer">
+  <div class="container">
+    <h4 class="seo-footer-title">Намери Български услуги по държава и категория</h4>
+    <div class="seo-links">
+      <a href="#">Строители Германия</a><a href="#">Почистване Лондон</a>
+      <a href="#">Счетоводство UK</a><a href="#">Транспорт Испания</a>
+      <a href="#">Ресторанти Берлин</a><a href="#">Магазини Мюнхен</a>
+      <a href="#">Адвокати Германия</a><a href="#">Фризьор Виена</a>
+      <a href="#">Строители Австрия</a><a href="#">Ресторанти Атина</a>
+      <a href="#">Счетоводство USA</a><a href="#">IT услуги Австралия</a>
+      <a href="#">Bulgarians in Germany</a><a href="#">Bulgarian services London</a>
+      <a href="#">Bulgarians in Spain</a><a href="#">Bulgarian restaurant Chicago</a>
+    </div>
+  </div>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="overlay" id="auth-modal" role="dialog" aria-modal="true" aria-label="Вход / Регистрация">
+  <div class="modal">
+    <div class="modal-hdr">
+      <h2>Вход / Регистрация</h2>
+      <button class="modal-x" onclick="UI.closeModal('auth-modal')" aria-label="Затвори">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="tabs" role="tablist">
+        <button class="tab active" id="tab-in" onclick="Auth.switchTab('in')" role="tab">Вход</button>
+        <button class="tab" id="tab-reg" onclick="Auth.switchTab('reg')" role="tab">Регистрация</button>
+      </div>
+      <div id="form-in">
+        <div class="fg"><label>Имейл</label><input type="email" id="in-email" placeholder="email@example.com" autocomplete="email" /></div>
+        <div class="fg"><label>Парола</label><input type="password" id="in-pass" placeholder="••••••••" autocomplete="current-password" /></div>
+        <!-- Honeypot -->
+        <input type="text" id="login_hp" name="website" style="display:none" tabindex="-1" autocomplete="off">
+        <div id="in-msg"></div>
+        <button class="btn-submit" onclick="Auth.login()">Влез в профила →</button>
+      </div>
+      <div id="form-reg" style="display:none">
+        <div class="fg"><label>Имейл</label><input type="email" id="reg-email" placeholder="email@example.com" autocomplete="email" /></div>
+        <div class="fg"><label>Парола (мин. 8 символа)</label><input type="password" id="reg-pass" placeholder="••••••••" autocomplete="new-password" /></div>
+        <div class="fg"><label>Потвърди парола</label><input type="password" id="reg-pass2" placeholder="••••••••" autocomplete="new-password" /></div>
+        <!-- Honeypot -->
+        <input type="text" id="reg_hp" name="phone_number" style="display:none" tabindex="-1" autocomplete="off">
+        <div id="reg-msg"></div>
+        <button class="btn-submit" onclick="Auth.register()">Създай безплатен профил →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADD LISTING MODAL -->
+<div class="overlay" id="add-modal" role="dialog" aria-modal="true" aria-label="Добави обява">
+  <div class="modal modal-wide">
+    <div class="modal-hdr">
+      <h2>Добави Обява</h2>
+      <button class="modal-x" onclick="UI.closeModal('add-modal')" aria-label="Затвори">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="note-info">📋 Обявата ще бъде прегледана и публикувана в рамките на 24 часа.</div>
+      <div class="fg" id="lst-type-wrap" style="display:none">
+        <label>Тип обява</label>
+        <select id="lst-type">
+          <option value="service">💼 Търся работник</option>
+          <option value="job">🔍 Търся работа</option>
+        </select>
+      </div>
+      <div class="fg"><label>Заглавие *</label><input type="text" id="lst-title" placeholder="Напр. Ремонт на апартаменти – Берлин" maxlength="150" /></div>
+      <div class="fg-row">
+        <div class="fg">
+          <label>Категория *</label>
+          <select id="lst-cat" onchange="AddListing.showTypeSelector()">
+            <option value="">Избери...</option>
+            <option>Строителство</option><option>Почистване</option><option>Магазини</option>
+            <option>Заведения</option><option>Транспорт</option><option>Красота</option>
+            <option>Счетоводство</option><option>Здраве</option><option>Уроци</option>
+            <option>Авто</option><option>IT/Дизайн</option><option>Работа</option><option>Други</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>Държава *</label>
+          <select id="lst-country">
+            <option value="">Избери...</option>
+            <option>Германия</option><option>Великобритания</option><option>Испания</option>
+            <option>Италия</option><option>Гърция</option><option>Австрия</option>
+            <option>Белгия</option><option>Холандия</option><option>Франция</option>
+            <option>Швейцария</option><option>Норвегия</option><option>Швеция</option>
+            <option>Дания</option><option>Португалия</option><option>Турция</option>
+            <option>США</option><option>Канада</option><option>Австралия</option><option>ОАЕ</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Град *</label><input type="text" id="lst-city" placeholder="Напр. Berlin, London..." maxlength="80" /></div>
+      <div class="fg"><label>Описание * (мин. 20 символа)</label><textarea id="lst-desc" placeholder="Опиши подробно услугата или бизнеса си..." maxlength="2000"></textarea></div>
+      <div class="fg-row">
+        <div class="fg"><label>WhatsApp</label><input type="tel" id="lst-wa" placeholder="+49 152..." /></div>
+        <div class="fg"><label>Телефон</label><input type="tel" id="lst-phone" placeholder="+49 152..." /></div>
+      </div>
+      <div class="fg-row">
+        <div class="fg"><label>Имейл</label><input type="email" id="lst-email" placeholder="email@..." /></div>
+        <div class="fg"><label>Уебсайт <span style="color:#4a6080;font-size:10px;">(Про план)</span></label><input type="url" id="lst-web" placeholder="https://..." /></div>
+      </div>
+      <!-- Honeypot -->
+      <input type="text" id="listing_hp" name="fax" style="display:none" tabindex="-1" autocomplete="off">
+      <div id="add-msg"></div>
+      <button class="btn-submit" id="add-btn" onclick="AddListing.submit()">📤 Публикувай Обявата →</button>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="overlay" id="detail-modal" role="dialog" aria-modal="true">
+  <div class="modal modal-wide">
+    <div class="modal-hdr">
+      <h2 id="det-title">Детайли</h2>
+      <button class="modal-x" onclick="UI.closeModal('detail-modal')" aria-label="Затвори">✕</button>
+    </div>
+    <div class="modal-body" id="det-body"></div>
+  </div>
+</div>
+
+<!-- USER PANEL MODAL -->
+<div class="overlay" id="panel-modal" role="dialog" aria-modal="true" aria-label="Моят профил">
+  <div class="modal modal-wide">
+    <div class="modal-hdr">
+      <h2>👤 Моят Профил</h2>
+      <button class="modal-x" onclick="UI.closeModal('panel-modal')" aria-label="Затвори">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="panel-stats">
+        <div class="pstat"><span class="n" id="ps-listings">0</span><span class="l">Обяви</span></div>
+        <div class="pstat"><span class="n" id="ps-views">0</span><span class="l">Прегледа</span></div>
+        <div class="pstat"><span class="n" id="ps-ratings">0</span><span class="l">Оценки</span></div>
+      </div>
+      <h3 style="color:#fff;font-size:14px;margin-bottom:12px;">Моите обяви</h3>
+      <div class="panel-list" id="panel-list"><div class="pempty">Зареждане...</div></div>
+      <div style="margin-top:16px;text-align:center;">
+        <button class="btn-ghost" onclick="Auth.logout()" style="color:#e74c3c;border-color:#e74c3c;">Изход от профила</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SPONSOR MODAL -->
+<div class="overlay" id="sponsor-modal" role="dialog" aria-modal="true" aria-label="Спонсориран банер">
+  <div class="modal">
+    <div class="modal-hdr">
+      <h2>📢 Спонсориран Банер</h2>
+      <button class="modal-x" onclick="UI.closeModal('sponsor-modal')" aria-label="Затвори">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="note-info">💡 Вашата реклама ще се показва 1 месец след одобрение. Цена: <strong>20€</strong></div>
+      <div class="fg"><label>Фирма / Бранд *</label><input type="text" id="sp-name" placeholder="BG Cleaning Berlin" /></div>
+      <div class="fg"><label>Линк при клик</label><input type="url" id="sp-link" placeholder="https://..." /></div>
+      <div class="fg"><label>Имейл за контакт *</label><input type="email" id="sp-email" placeholder="email@..." /></div>
+      <div class="fg"><label>URL на банер изображение * (1200x300px)</label><input type="url" id="sp-img" placeholder="https://..." /></div>
+      <div id="sp-msg"></div>
+      <button class="btn-submit" onclick="Banners.submit()">💳 Изпрати заявка и плати 20€ →</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/security.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/seo.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/listings.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/panel.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
